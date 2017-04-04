@@ -1,0 +1,7 @@
+ENV OPENRESTY_RUNDIR /openresty
+RUN mkdir -p ${OPENRESTY_RUNDIR}
+VOLUME ${OPENRESTY_RUNDIR}/conf
+VOLUME ${OPENRESTY_RUNDIR}/logs
+WORKDIR ${OPENRESTY_RUNDIR}
+CMD /usr/local/openresty/nginx/sbin/nginx -p ${OPENRESTY_RUNDIR} -c conf/nginx.conf
+

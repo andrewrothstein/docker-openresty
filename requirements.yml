@@ -1,0 +1,3 @@
+---
+- src: andrewrothstein.openresty
+  version: v1.0.6
